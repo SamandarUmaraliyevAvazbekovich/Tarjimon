@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'semanticui/semantic.min.css' %}">
+	<title></title>
+</head>
+<body>
+	<div class="ui header segment">
+		<div class="ui container">
+			<h1 class="ui header">Onlayn Lug'at</h1>
+			<h1 style="text-align: right;" class="ui header">Umarliyev Samandar 617-20</h1>
+			<div class="ui divider"></div>
+			<p>Qulay, Tez va Sifatli</p>
+		</div>
+	</div>
+	<div class="ui container">
+		<div class="ui placeholder segment">
+			<div class="ui icon header">
+				Inglizcha - O'zbekcha
+			</div>
+			<form method="GET" class="inline" style="width:90%;">
+				<div class="ui massive form search">
+					<div class="ui icon input" style="width:100%;">
+						<input name="q" type="text" class="promt" placeholder="Sozni kiriting:">
+						<i class="search link icon"></i>
+					</div>
+					
+				</form>
+			</div>
+				
+		</div>
+			<div class="ui piled segment ">
+			<h4 class="ui header">Natija</h4>
+			<table class="ui celled large table">
+				<thead>
+					<tr>
+						<th><i class="united kingdom flag"></i>English</th>
+						<th><i class="uz flag"></i>Uzbek</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{a}}</td>
+						<td>{{b}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	
+
+</body>
+</html>
